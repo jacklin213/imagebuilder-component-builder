@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/awsui-react-template/static/css/main.bdefb6d2.css",
+    "main.js": "/awsui-react-template/static/js/main.a295a5c0.js",
+    "static/js/787.94fc4366.chunk.js": "/awsui-react-template/static/js/787.94fc4366.chunk.js",
+    "index.html": "/awsui-react-template/index.html",
+    "main.bdefb6d2.css.map": "/awsui-react-template/static/css/main.bdefb6d2.css.map",
+    "main.a295a5c0.js.map": "/awsui-react-template/static/js/main.a295a5c0.js.map",
+    "787.94fc4366.chunk.js.map": "/awsui-react-template/static/js/787.94fc4366.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdefb6d2.css",
+    "static/js/main.a295a5c0.js"
+  ]
+}
