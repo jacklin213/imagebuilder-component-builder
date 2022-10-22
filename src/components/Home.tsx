@@ -17,32 +17,19 @@ function Home() {
           variant="h2"
           description="Created by jacklin213"
           actions={
-            <SpaceBetween
-              direction="horizontal"
-              size="xs"
-            >
-              <Button
-                href={projectRepoLink}
-                target="_blank"
-                iconAlign="right"
-                iconName="external"
-                variant="primary"
-              >
+            <SpaceBetween direction="horizontal" size="xs">
+              <Button href={projectRepoLink} target="_blank" iconAlign="right" iconName="external" variant="primary">
                 Github
               </Button>
             </SpaceBetween>
           }
         >
-          { appTitle }
+          {appTitle}
         </Header>
       }
     >
-      <Box variant="p">
-        Create ImageBuilder components using an interactive component builder.
-      </Box>
-      <Box variant="p">
-        Work in progress...
-      </Box>
+      <Box variant="p">Create ImageBuilder components using an interactive component builder.</Box>
+      <Box variant="p">Work in progress...</Box>
     </Container>
   );
 }

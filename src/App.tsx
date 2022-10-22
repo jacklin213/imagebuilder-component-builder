@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import AppLayout from "@cloudscape-design/components/app-layout";
-import Box from "@cloudscape-design/components/box"
+import Box from "@cloudscape-design/components/box";
 import Grid from "@cloudscape-design/components/grid";
 import Toggle from "@cloudscape-design/components/toggle";
 
@@ -24,12 +24,11 @@ function App() {
         headerSelector="#navbar" // Ensure AppLayout is rendered below navbar
         breadcrumbs={
           <Grid gridDefinition={[{ colspan: 6 }, { colspan: 6 }]}>
-            <Box><Breadcrumbs /></Box>
-            <Box float="right" margin={{top: 'xxs'}}>
-              <Toggle
-                checked={isDarkMode}
-                onChange={({ detail }) => setDarkMode(detail.checked)}
-              >
+            <Box>
+              <Breadcrumbs />
+            </Box>
+            <Box float="right" margin={{ top: "xxs" }}>
+              <Toggle checked={isDarkMode} onChange={({ detail }) => setDarkMode(detail.checked)}>
                 Dark Mode
               </Toggle>
             </Box>

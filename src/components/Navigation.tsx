@@ -6,15 +6,13 @@ import Routes from "../AppRoutes";
 import { awsuiDocLink } from "../constants/Links";
 import { appTitle } from "../constants/Constants";
 
-
 function Navigation() {
   const location = useLocation();
-  console.log(location);
   const [activeHref, setActiveHref] = useState(`#${location.pathname}` ?? Routes.home.href);
 
   useEffect(() => {
     return setActiveHref(`#${location.pathname}`);
-  }, [location])
+  }, [location]);
 
   return (
     <SideNavigation

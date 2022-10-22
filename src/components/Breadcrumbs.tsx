@@ -14,13 +14,9 @@ function getBreadcrumbItems() {
 
   return routePaths.reduce((items, path) => {
     if (path === "") {
-      return [
-        { text: AppRoutes.home.text, href: AppRoutes.home.href }
-      ];
+      return [{ text: AppRoutes.home.text, href: AppRoutes.home.href }];
     } else if (!isValidRoute(path)) {
-      return [
-        { text: AppRoutes.error.text, href: AppRoutes.error.href }
-      ];
+      return [{ text: AppRoutes.error.text, href: AppRoutes.error.href }];
     } else {
       return [
         ...items,
@@ -28,7 +24,7 @@ function getBreadcrumbItems() {
           text: AppRoutes[path].text,
           href: AppRoutes[path].href
         }
-      ]
+      ];
     }
   }, [] as BreadcumbItem[]);
 }
@@ -41,12 +37,7 @@ function getHashString() {
 function Breadcrumbs() {
   useLocation();
 
-  return (
-    <BreadcrumbGroup
-      items={getBreadcrumbItems()}
-      ariaLabel="Breadcrumbs"
-    />
-  );
+  return <BreadcrumbGroup items={getBreadcrumbItems()} ariaLabel="Breadcrumbs" />;
 }
 
 export default Breadcrumbs;

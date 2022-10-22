@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
-import "@cloudscape-design/global-styles/index.css"
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "@cloudscape-design/global-styles/index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root')!);
+const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
     <HashRouter>

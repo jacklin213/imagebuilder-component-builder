@@ -15,7 +15,7 @@ function InfoPane() {
         <ul>
           <li>{renderLink(projectRepoLink, "awsui-react-template Github")}</li>
           <li>{renderLink(awsuiDocLink, "@awsui-documentation")}</li>
-        </ul>  
+        </ul>
       </div>
     </HelpPanel>
     </>

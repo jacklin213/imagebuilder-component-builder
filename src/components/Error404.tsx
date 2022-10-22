@@ -12,7 +12,9 @@ function Error404() {
       <Box variant="h2">
         Hmm... looks like page: <Box variant="code">{location.pathname}</Box> was not found
       </Box>
-      <Box>Click <a href="#/home">here</a> to return to the home page.</Box>
+      <Box>
+        Click <a href="#/home">here</a> to return to the home page.
+      </Box>
     </Box>
   );
 }
