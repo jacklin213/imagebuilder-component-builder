@@ -1,4 +1,4 @@
-import Link from "@awsui/components-react/link";
+import Link from "@cloudscape-design/components/link";
 
 export const projectRepoLink = "https://github.com/jacklin213/awsui-react-template";
 export const awsuiDocLink= "https://github.com/aws/awsui-documentation";

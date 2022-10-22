@@ -1,5 +1,5 @@
-import Header from "@awsui/components-react/header";
-import HelpPanel from "@awsui/components-react/help-panel";
+import Header from "@cloudscape-design/components/header";
+import HelpPanel from "@cloudscape-design/components/help-panel";
 
 import { awsuiDocLink, projectRepoLink, renderLink } from "../constants/Links";
 

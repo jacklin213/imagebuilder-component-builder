@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import AppLayout from "@awsui/components-react/app-layout";
-import Box from "@awsui/components-react/box"
-import Grid from "@awsui/components-react/grid";
-import Toggle from "@awsui/components-react/toggle";
+import AppLayout from "@cloudscape-design/components/app-layout";
+import Box from "@cloudscape-design/components/box"
+import Grid from "@cloudscape-design/components/grid";
+import Toggle from "@cloudscape-design/components/toggle";
 
 import Breadcrumbs from "./components/Breadcrumbs";
 import Error404 from "./components/Error404";

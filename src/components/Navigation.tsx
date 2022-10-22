@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import SideNavigation from "@awsui/components-react/side-navigation";
+import SideNavigation from "@cloudscape-design/components/side-navigation";
 
 import Routes from "../AppRoutes";
 import { awsuiDocLink } from "../constants/Links";

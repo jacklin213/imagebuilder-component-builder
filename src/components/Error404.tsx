@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import Box from "@awsui/components-react/box";
+import Box from "@cloudscape-design/components/box";
 
 function Error404() {
   let location = useLocation();

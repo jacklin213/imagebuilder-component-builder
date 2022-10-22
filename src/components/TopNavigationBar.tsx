@@ -1,4 +1,4 @@
-import TopNavigation from "@awsui/components-react/top-navigation";
+import TopNavigation from "@cloudscape-design/components/top-navigation";
 
 import AppRoutes from "../AppRoutes";
 import { projectRepoLink, npmAwsUiComponentsLink, npmAwsUiGlobalStylesLink } from "../constants/Links";

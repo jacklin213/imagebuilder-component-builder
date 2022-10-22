@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import BreadcrumbGroup from "@awsui/components-react/breadcrumb-group";
+import BreadcrumbGroup from "@cloudscape-design/components/breadcrumb-group";
 
 import AppRoutes, { isValidRoute } from "../AppRoutes";
 

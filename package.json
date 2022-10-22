@@ -4,21 +4,23 @@
   "private": true,
   "homepage": "/imagebuilder-component-builder",
   "dependencies": {
-    "@awsui/components-react": "^3.0.497",
-    "@awsui/global-styles": "^1.0.14",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^29.0.0",
-    "@types/node": "^18.7.16",
-    "@types/react": "^18.0.18",
-    "@types/react-dom": "^18.0.6",
+    "@cloudscape-design/components": "^3.0.82",
+    "@cloudscape-design/global-styles": "^1.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.3",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.7.16",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6"
   },
   "scripts": {
     "start": "react-scripts start",

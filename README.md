@@ -3,7 +3,7 @@
 Create ImageBuilder components using an interactive component builder.
 
 Project bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Contains a basic implementation of `HashRouter` using [react-router-dom](https://github.com/remix-run/react-router) (6.3.0) and uses [@awsui/components-react](https://github.com/aws/awsui-documentation).
+Contains a basic implementation of `HashRouter` using [react-router-dom](https://github.com/remix-run/react-router) (6.3.0) and uses [Cloudscape Design System](https://cloudscape.design/).
 
 Project automatically builds and deploys the app to `gh-pages` using [peaceiris/actions-gh-pages@v3](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-static-site-generators-with-nodejs)
 

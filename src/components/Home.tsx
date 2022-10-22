@@ -1,8 +1,8 @@
-import Box from "@awsui/components-react/box";
-import Button from "@awsui/components-react/button";
-import Container from "@awsui/components-react/container";
-import Header from "@awsui/components-react/header";
-import SpaceBetween from "@awsui/components-react/space-between";
+import Box from "@cloudscape-design/components/box";
+import Button from "@cloudscape-design/components/button";
+import Container from "@cloudscape-design/components/container";
+import Header from "@cloudscape-design/components/header";
+import SpaceBetween from "@cloudscape-design/components/space-between";
 
 import { projectRepoLink } from "../constants/Links";
 import { appTitle } from "../constants/Constants";
