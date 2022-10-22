@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Badge from "@awsui/components-react/badge";
 import SideNavigation from "@awsui/components-react/side-navigation";
 
-import Routes from "../Routes";
+import Routes from "../AppRoutes";
 import { awsuiDocLink } from "../constants/Links";
+import { appTitle } from "../constants/Constants";
 
 
 function Navigation() {
   const location = useLocation();
+  console.log(location);
   const [activeHref, setActiveHref] = useState(`#${location.pathname}` ?? Routes.home.href);
 
   useEffect(() => {
@@ -18,16 +19,9 @@ function Navigation() {
   return (
     <SideNavigation
       activeHref={activeHref}
-      header={{ href: "#/", text: "awsui-react-template" }}
+      header={{ href: "#/", text: appTitle }}
       items={[
         { type: "link", text: Routes.home.text, href: Routes.home.href },
-        { type: "link", text: Routes.components.text, href: Routes.components.href },
-        { type: "divider" },
-        {
-          type: "link",
-          text: "Dummy Notifications",
-          info: <Badge color="red">2</Badge>
-        },
         { type: "divider" },
         {
           type: "link",

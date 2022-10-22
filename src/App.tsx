@@ -1,21 +1,20 @@
 import { useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import AppLayout from "@awsui/components-react/app-layout";
 import Box from "@awsui/components-react/box"
 import Grid from "@awsui/components-react/grid";
 import Toggle from "@awsui/components-react/toggle";
 
 import Breadcrumbs from "./components/Breadcrumbs";
-import ComponentsTable from "./components/ComponentsTable";
 import Error404 from "./components/Error404";
 import Home from "./components/Home";
 import InfoPane from "./components/InfoPane";
 import Navigation from "./components/Navigation";
-import Routes from "./Routes";
 import TopNavigationBar from "./components/TopNavigationBar";
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(false);
+  const [isNavOpen, setNavOpen] = useState(false);
 
   return (
     <>
@@ -36,15 +35,15 @@ function App() {
             </Box>
           </Grid>
         }
-        navigation={<Navigation />}
         content={
-          <Switch>
-            <Route exact path="/"><Home /></Route>
-            <Route path={`/${Routes.home.location}`}><Home /></Route>
-            <Route path={`/${Routes.components.location}`}><ComponentsTable /></Route>
-            <Route path="*"><Error404 /></Route>
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
         }
+        navigation={<Navigation />}
+        navigationOpen={isNavOpen}
+        onNavigationChange={({ detail: { open } }) => setNavOpen(open)}
         tools={<InfoPane />}
       />
     </>

@@ -4,11 +4,11 @@ import Container from "@awsui/components-react/container";
 import Header from "@awsui/components-react/header";
 import SpaceBetween from "@awsui/components-react/space-between";
 
-import { awsuiDocLink, createReactAppLink, ghPagesActionLink, 
-  projectRepoLink, reactRouterDomLink, renderLink } from "../constants/Links";
+import { projectRepoLink } from "../constants/Links";
+import { appTitle } from "../constants/Constants";
 
 function Home() {
-  document.title = "Home - awsui-react-template";
+  document.title = appTitle;
 
   return (
     <Container
@@ -33,18 +33,15 @@ function Home() {
             </SpaceBetween>
           }
         >
-          Home - awsui-react-template
+          { appTitle }
         </Header>
       }
     >
       <Box variant="p">
-        React template project bootstrapped with {renderLink(createReactAppLink, "Create React App")}.
-        Contains a basic implementation of HashRouter using {renderLink(reactRouterDomLink, "react-router-dom")} (5.3.0)
-        and uses {renderLink(awsuiDocLink, "@awsui/components-react")}.
+        Create ImageBuilder components using an interactive component builder.
       </Box>
       <Box variant="p">
-        Project automatically builds and deploys the app to gh-pages 
-        using {renderLink(ghPagesActionLink, "peaceiris/actions-gh-pages@v3")}
+        Work in progress...
       </Box>
     </Container>
   );

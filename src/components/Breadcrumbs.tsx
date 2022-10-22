@@ -1,27 +1,36 @@
 import { useLocation } from "react-router-dom";
 import BreadcrumbGroup from "@awsui/components-react/breadcrumb-group";
 
-import Routes from "../Routes";
+import AppRoutes, { isValidRoute } from "../AppRoutes";
+
+interface BreadcumbItem {
+  text: string;
+  href: string;
+}
 
 function getBreadcrumbItems() {
   const hashString = getHashString();
   const routePaths = hashString.split("/");
 
   return routePaths.reduce((items, path) => {
-    if (path === "" || path === "home") {
+    if (path === "") {
       return [
-        { text: Routes.home.text, href: Routes.home.href }
+        { text: AppRoutes.home.text, href: AppRoutes.home.href }
+      ];
+    } else if (!isValidRoute(path)) {
+      return [
+        { text: AppRoutes.error.text, href: AppRoutes.error.href }
       ];
     } else {
       return [
         ...items,
         {
-          text: Routes[path].text,
-          href: Routes[path].href
+          text: AppRoutes[path].text,
+          href: AppRoutes[path].href
         }
       ]
     }
-  }, []);
+  }, [] as BreadcumbItem[]);
 }
 
 function getHashString() {
@@ -37,7 +46,7 @@ function Breadcrumbs() {
       items={getBreadcrumbItems()}
       ariaLabel="Breadcrumbs"
     />
-    );
+  );
 }
 
 export default Breadcrumbs;

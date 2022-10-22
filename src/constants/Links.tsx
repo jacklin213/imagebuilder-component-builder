@@ -8,7 +8,7 @@ export const createReactAppLink = "https://github.com/facebook/create-react-app"
 export const npmAwsUiComponentsLink = "https://www.npmjs.com/package/@awsui/components-react";
 export const npmAwsUiGlobalStylesLink = "https://www.npmjs.com/package/@awsui/global-styles";
 
-export const renderLink = (link, text, external=true) => {
+export const renderLink = (link: string, text: string, external=true) => {
   return (
     <Link
       external={external}
