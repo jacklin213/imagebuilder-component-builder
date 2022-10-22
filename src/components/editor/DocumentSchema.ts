@@ -7,6 +7,12 @@ export interface ComponentDocument {
   phases: ComponentDocumentPhase[];
 }
 
+export enum PhaseType {
+  Build = "build",
+  Test = "test",
+  Validate = "validate"
+}
+
 export interface ComponentDocumentPhase {
   name: string;
   steps: ComponentDocumentStep[];
@@ -19,6 +25,6 @@ export interface ComponentDocumentStep {
   onFailure?: string;
   maxAttempts?: number;
   inputs: {
-    [key: string]: any
-  }
+    [key: string]: any;
+  };
 }

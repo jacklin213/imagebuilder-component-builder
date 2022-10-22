@@ -1,5 +1,5 @@
 import { Container, Header, Textarea } from "@cloudscape-design/components";
-import CopyButton from "./CopyButton";
+import CopyButton from "../CopyButton";
 import { EditorProps } from "./Editor";
 
 function BuilderOutput({ data }: EditorProps) {
@@ -8,7 +8,7 @@ function BuilderOutput({ data }: EditorProps) {
       header={
         <Header
           variant="h2"
-          description="The generated component document. Do not manually edit as changes will be overritten"
+          description="The generated component document. Do not manually edit as changes will be overwritten"
           actions={
             <CopyButton contentTitle="Component document" content={data.output} />
           }
