@@ -11,6 +11,9 @@ import Home from "./components/Home";
 import InfoPane from "./components/InfoPane";
 import Navigation from "./components/Navigation";
 import TopNavigationBar from "./components/TopNavigationBar";
+import AppRoutes from "./AppRoutes";
+import Editor from "./components/editor/Editor";
+import "./App.css";
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -37,6 +40,7 @@ function App() {
         content={
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path={AppRoutes.editor.location} element={<Editor />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
         }
